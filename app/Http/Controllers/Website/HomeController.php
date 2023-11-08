@@ -104,19 +104,29 @@ class HomeController extends Controller
     {
       // dd($id);
       $orders=order::where('customer_id',$id)->get();
-      // dd($orders);
+    //   dd($orders);
       return view('frontend.pages.myorder', compact('orders'));
     }
 
 
     public function myorderView($id)
     {
-      // dd($id);
+
       $order_items=OrderDetail::with('product')->where('order_id',$id)->get();
-      // dd($orders);
+
+    //   dd($order_items);
       return view('frontend.pages.orderview', compact('order_items'));
     }
+    public function myorderDelete($id)
+    {
+        $order=order::find($id);
+        // dd($order);
+        $order->delete();
 
+        return redirect()->back();
+
+
+    }
 
     public function login()
     {
@@ -305,7 +315,7 @@ class HomeController extends Controller
 
 
 public function placeOrder(Request $request){
-
+        // dd($request->all());
       $request->validate([
         //input fields here => rules here
       ]);
@@ -316,7 +326,7 @@ public function placeOrder(Request $request){
 
       // dd($myCart);//
 
-      // dd($request->all());
+    //   dd($request->all());
 
       try
       {
@@ -371,7 +381,8 @@ public function placeOrder(Request $request){
       }
       catch(Throwable $e)
       {
-        dd($e->getMessage());
+        // dd($e->getMessage());
+
         DB::rollBack();
         return redirect()->back()->with('msg','Something went wrong');
 

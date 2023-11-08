@@ -30,6 +30,7 @@
       <td>{{$order->created_at}}</td>
       <td>
         <a href="{{route('order.view',$order->id)}}" class="btn btn-primary">View</a>
+        <a href="{{route('order.delete',$order->id)}}" class="btn btn-danger">Delete</a>
       </td>
     </tr>
     @endforeach

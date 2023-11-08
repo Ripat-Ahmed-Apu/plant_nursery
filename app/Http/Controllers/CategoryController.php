@@ -13,13 +13,14 @@ class CategoryController extends Controller
     {
         $categories= Category::paginate(5);
         return view ('backend.pages.category.list',compact('categories'));
+        // return view('frontend.pages.money_recpit');
     }
 
     public function delete($id)
    {
-    
+
    $category=Category::find($id);
-   
+
    $category->delete();
 
 
@@ -63,7 +64,7 @@ class CategoryController extends Controller
         $request->validate([
             'category_name'=>'required'
             // 'description'=>'required'
-            
+
         ]);
 
 
@@ -76,20 +77,20 @@ class CategoryController extends Controller
          return redirect()->route('category.list')->with('msg','Category Created successfully.');
     }
 
-    
+
 
     public function update(Request $request,$id)
     {
-       
+
 
             // dd($request->all());
-        
+
         $request->validate([
                 'category_name'=>'required',
                 'description'=>'required'
             ]);
-            
-            
+
+
         $category=Category::find($id);
 
        $category->update([

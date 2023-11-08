@@ -54,9 +54,6 @@ Route::get('/product-details/{id}',[WebsiteProductController::class,'productdeta
 
 Route::get('/customer-login',[HomeController::class,'login'])->name('customer.login');
 Route::post('/customer-dologin',[CustomerController::class,'dologin'])->name('customer.dologin');
-
-// Route::get('/customer-logout',[CustomerController::class,'customerlogout'])->name('customer.logout');
-
 Route::get('/customer-registration',[HomeController::class,'registration'])->name('customer.registration');
 Route::post('/customer-store',[CustomerController::class,'store'])->name('customer.store');
 
@@ -66,7 +63,8 @@ Route::group(['middleware'=>'frontendAuth'],function(){
     Route::post('/place-order',[HomeController::class,'placeOrder'])->name('place.order');
     Route::get('/my-order/{id}',[HomeController::class,'myorder'])->name('my.order');
     Route::get('/my-order-view/{id}',[HomeController::class,'myorderView'])->name('my.order.view');
-
+    Route::get('/my-order-delete/{id}',[HomeController::class,'myorderDelete'])->name('my.order.delete');
+    Route::get('invoice/{id}',[OrderController::class,'invoice'])->name('customer.invoice');
     Route::get('/customer-logout',[CustomerController::class,'customerlogout'])->name('customer.logout');
 
     Route::get('/customer-profile',[HomeController::class,'profile'])->name('customer.profile');
@@ -79,8 +77,8 @@ Route::group(['middleware'=>'frontendAuth'],function(){
 
 
 // SSLCOMMERZ Start
-// Route::get('/example1', [SslCommerzPaymentController::class, 'exampleEasyCheckout']);
-// Route::get('/example2', [SslCommerzPaymentController::class, 'exampleHostedCheckout']);
+Route::get('/example1', [SslCommerzPaymentController::class, 'exampleEasyCheckout']);
+Route::get('/example2', [SslCommerzPaymentController::class, 'exampleHostedCheckout']);
 
 Route::post('/pay', [SslCommerzPaymentController::class, 'index']);//hosted checkout
 // Route::post('/pay-via-ajax', [SslCommerzPaymentController::class, 'payViaAjax']);//easy checkout
@@ -135,6 +133,7 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 
             Route::get('/orders',[OrderController::class,'list'])->name('order.list');
             Route::get('/orders/view/{id}',[OrderController::class,'view'])->name('order.view');
+            Route::get('/orders/delete/{id}',[OrderController::class,'delete'])->name('order.delete');
             Route::post('/orders/assign/{id}',[OrderController::class,'assign'])->name('assign.delivery');
 
             Route::get('/employee',[EmployeeController::class,'list'])->name('employee.list');
@@ -162,6 +161,7 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 
 
             Route::get('/payment-details',[OrderController::class,'paymentDetails'])->name('payment.details');
+
 
 
 

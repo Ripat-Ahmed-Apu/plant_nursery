@@ -17,7 +17,8 @@
             <li><a data-toggle="tab" style="text-align: center;">Order Details</a></li>
             <li class="pull-right collection-url"><a>All <i></i></a></li>
             </ul>
-<br> </br>
+            {{-- <a href="{{route('invoice',)}}" class="btn btn-success">Invoice</a> --}}
+<br><br>
 
 <table class="table">
   <thead>
@@ -30,7 +31,7 @@
     </tr>
   </thead>
   <tbody>
-
+    {{-- @dd($order_items) --}}
   @foreach($order_items as $key=>$item)
     <tr>
       <th scope="row">{{$key+1}}</th>
@@ -38,7 +39,7 @@
       <td>{{$item->price}}</td>
       <td>{{$item->qty}}</td>
       <td>{{$item->subtotal}}</td>
-      
+
     </tr>
     @endforeach
   </tbody>

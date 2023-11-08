@@ -28,8 +28,8 @@
       <th scope="col"> Total Ammount</th>
       <th scope="col">payment Method</th>
       <th scope="col">Date</th>
-    
-   
+
+
     </tr>
   </thead>
   <tbody>
@@ -42,10 +42,12 @@
           <td>{{$item->payment_method}}</td>
           <td>{{$item->created_at}}</td>
           <td>
-            
-        
+
+
           <td>
                 <a href="{{route('my.order.view',$item->id)}}" class="btn btn-primary">View</a>
+                <a href="{{route('customer.invoice',$item->id)}}" class="btn btn-success">Invoice</a>
+                <a href="{{route('my.order.delete',$item->id)}}" class="btn btn-danger">Cancel</a>
           </td>
         </tr>
 

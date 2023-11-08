@@ -25,11 +25,20 @@ class OrderController extends Controller
         return view('backend.pages.order.details',compact('order_items','employees','order'));
 
     }
+    public function delete($id){
+
+        $order=Order::find($id);
+        // dd($order);
+        $order->delete();
+        return redirect()->back();
+
+    }
 
 
     public function assign(Request $request,$id)
     {
         $order=Order::find($id);
+        // dd($order);
 
         $order->update([
             'deliveryman_id'=>$request->deliveryman_id,
@@ -70,6 +79,12 @@ class OrderController extends Controller
         return view('backend.pages.payment-details',compact('orders'));
     }
 
+    public function invoice($id){
+
+      $order_items=OrderDetail::with('product')->where('order_id',$id)->get();
+        // dd($order_items);
+        return view('frontend.pages.money_recpit',compact('order_items'));
+    }
 
 
 }

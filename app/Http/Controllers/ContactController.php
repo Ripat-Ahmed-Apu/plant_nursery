@@ -12,7 +12,7 @@ class ContactController extends Controller
 {
     public function contact()
    {
-    
+
     $contact= Contact::all();
      return view ('backend.pages.contact.list',compact('contact'));
    }

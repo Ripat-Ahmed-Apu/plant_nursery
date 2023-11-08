@@ -81,7 +81,7 @@
                 Contact Us Info
             </a>
 
-            {{-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseReport" aria-expanded="false" aria-controls="collapseReport">
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseReport" aria-expanded="false" aria-controls="collapseReport">
                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                 Report
                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -95,7 +95,7 @@
                 <nav class="sb-sidenav-menu-nested nav">
                 <a class="nav-link" href="{{route('order.report')}}">Order Report</a>
                 </nav>
-            </div> --}}
+            </div>
 
         </div>
     </div>

@@ -194,7 +194,7 @@ class SslCommerzPaymentController extends Controller
             }
         } else {
             #That means something wrong happened. You can redirect customer to your product page.
-            toastr()->warning("Invalid Transaction");
+            dd("Invalid Transaction");
         }
 
 
