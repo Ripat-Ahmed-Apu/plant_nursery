@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\OrderMail;
 use App\Models\Employee;
 use App\Models\Order;
 use Brian2694\Toastr\Facades\Toastr;
 use App\Models\OrderDetail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class OrderController extends Controller
 {
@@ -40,11 +42,12 @@ class OrderController extends Controller
         $order=Order::find($id);
         // dd($order);
 
-        $order->update([
+        $orderMail=$order->update([
             'deliveryman_id'=>$request->deliveryman_id,
             'payment_status'=>$request->status
         ]);
-
+        // Mail::to($order->email)->send(new OrderMail($order));
+        Mail::to($order->email)->send(new OrderMail($order));
         return redirect()->back();
 
     }
@@ -83,6 +86,7 @@ class OrderController extends Controller
 
       $order_items=OrderDetail::with('product')->where('order_id',$id)->get();
         // dd($order_items);
+
         return view('frontend.pages.money_recpit',compact('order_items'));
     }
 

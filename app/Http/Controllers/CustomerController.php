@@ -17,9 +17,9 @@ class CustomerController extends Controller
             'email'=>'required|email:rfc,dns|unique:customers',
             'password'=>'required|min:6'
         ]);
-        
+
         // dd($request);
-        
+
         Customer::create([
             'name'=>$request->name,
             'password'=>bcrypt($request->password),
@@ -27,12 +27,12 @@ class CustomerController extends Controller
         ]);
         Toastr::success('Registration Success.');
     return redirect()->route('home')->with('msg','Registration success.');
-    
+
 
     }
 
     public function dologin(Request $request) {
-       
+
         //validation
 
         $credentials=$request->except('_token');
@@ -46,7 +46,7 @@ class CustomerController extends Controller
         }
 
         // dd("invalid user");
-       
+
         else{
         Toastr::error('Invalid Credentials.');
         return redirect()->back();

@@ -22,13 +22,6 @@
             <textarea  class="form-control" placeholder="Enter description" name="description" id="" cols="" rows=""></textarea>
 
         </div>
-
-        <!-- <div class="form-group">
-            <label for="">Upload Image</label>
-            <input type="file" placeholder="upload image" class="form-control">
-
-        </div> -->
-
         <ol class="breadcrumb mb-1">
 
         </ol>

@@ -10,13 +10,7 @@
                     <div class="social pull-left">
 
                         <ul>
-                            <!-- <li><a> -->
-                            <!-- <img src="img/ShobujBrikkho.png" style="width: 27px; height: 27px" alt=""> -->
 
-                            {{-- <li style="color: white;">Cell: +880-1758690300</li>
-                            <li style="color: white;">Gmail: ahmed.ripat.apu@gmail.com</li> --}}
-
-                            <!-- <li><a><i></i>Gmail: shobujsumon143@gmail.com</a></li> -->
 
                         </ul>
 
@@ -61,7 +55,7 @@
                         <a style="color: Black;">
 
                             <img src="{{url('img/nlogo.png')}}" style="width: 80px; height: 80px">Plant Paradise
-                            <!-- ShobujBrikkho Nursery -->
+
                         </a>
 
 
@@ -164,8 +158,8 @@
                 <li><a href="{{route('home')}}">Home</a></li>
 
                 <li><a href="{{route('website.all-products')}}">Products</a></li>
-               
-                {{-- <li><a href="">Blogs</a></li> --}}
+
+
 
                 <li><a href="{{route('about')}}">About</a></li>
                 <li><a href="{{route('contact')}}">Contact</a></li>

@@ -16,19 +16,7 @@
 
         <div class="tab-content">
 
-                <!-- <div>
 
-                    <div>
-
-                    <p>
-
-                   </p>
-
-                   <img src="img/ShobujBrikkho.png" style="width: 200px; height: 200px" alt="">
-
-                    </div>
-
-                </div> -->
 
   <section class="container mt-5">
     <div class="row">

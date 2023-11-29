@@ -33,7 +33,7 @@
 
                             <div class="product-description text-center">
 
-                            <p class="title">{{$product->name}}</p>
+                            <p   class="title text-capitalize">{{$product->name}}</p>
 
                             <p class="price">{{$product->price}} BDT</p>
 

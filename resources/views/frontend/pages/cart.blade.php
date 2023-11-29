@@ -13,7 +13,7 @@
 }
 
 .card{
-    box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);    
+    box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);
 }
 
 .ui-product-color {
@@ -47,21 +47,21 @@
                     <th class="text-right py-3 px-4" style="width: 100px;">Total</th>
                     <th class="text-right py-3 px-4" style="width: 100px;">Delete</th>
 
-                    <!-- <th class="text-center align-middle py-3 px-0" style="width: 40px;"><a href="#" class="shop-tooltip float-none text-light" title="" data-original-title="Clear cart"><i class="ino ion-md-trash"></i></a></th> -->
+
                   </tr>
                 </thead>
                 <tbody>
 
         @if($myCart!=null  )
         @foreach($myCart as $key=>$cart)
-    
+
                   <tr>
                     <td class="p-4">
                       <div class="media align-items-center">
                         <img src="{{url('uploads/products/'.$cart['image'])}}" class="d-block ui-w-40 ui-bordered mr-4" alt="">
                         <div class="media-body">
                           <a href="#" class="d-block text-dark">{{$cart['name']}}</a>
-                          
+
                         </div>
                       </div>
                     </td>
@@ -79,17 +79,9 @@
               </table>
             </div>
             <!-- / Shopping cart table -->
-    
+
             <div class="d-flex flex-wrap justify-content-between align-items-center pb-4">
-              <!-- <div class="mt-4">
-                <label class="text-muted font-weight-normal">Promocode</label>
-                <input type="text" placeholder="ABC" class="form-control">
-              </div>
-              <div class="d-flex">
-                <div class="text-right mt-4 mr-5">
-                  <label class="text-muted font-weight-normal m-0">Discount</label>
-                  <div class="text-large"><strong>$20</strong></div>
-                </div> -->
+
                 <div class="text-right mt-4">
                   <label class="text-muted font-weight-normal m-0">Total price</label>
                   <div class="text-large"><strong>{{$myCart?array_sum(array_column($myCart,'sub_total')):0}}</strong></div>
@@ -99,7 +91,7 @@
 
             @if(session()->has('cart') && count(session()->get('cart'))>0)
             <div class="float-right">
-              <!-- <button type="button" class="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Back to shopping</button> -->
+              {{-- <button type="button" class="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Back to shopping</button> --}}
               <a href="{{route('checkout')}}" class="btn btn-success">Checkout</a>
             </div>
             @endif

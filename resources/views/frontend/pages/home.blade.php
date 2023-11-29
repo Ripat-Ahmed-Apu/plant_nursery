@@ -20,9 +20,8 @@
 
             <li><a data-toggle="tab">Gallery</a></li>
 
-            <!-- <li><a href="#best-seller" data-toggle="tab">Best Seller</a></li> -->
 
-            
+
 
             <li class="pull-right collection-url"><a>All <i></i></a></li>
 
@@ -42,7 +41,7 @@
 
                             <div class="product-description text-center">
 
-                            <p class="title">{{$product->name}}</p>
+                            <p class="title">{{ucfirst($product->name)}}</p>
 
                             <p class="price">{{$product->price}} BDT</p>
 
@@ -54,10 +53,10 @@
                                 <ul>
 
                                <!-- <li>
-                                <form action="{{route('add.to.cart',$product->id)}}" method="post"> 
+                                <form action="{{route('add.to.cart',$product->id)}}" method="post">
                                     @csrf
                                         <button type="submit"><i class="fa fa-cart-arrow-down"></i></button>
-                                    
+
                                 </form>
                                  </li> -->
 
@@ -73,7 +72,7 @@
 
                 </div>
                 @endforeach
-            </div>  
+            </div>
 
         </div>
 

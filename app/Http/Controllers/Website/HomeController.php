@@ -22,11 +22,11 @@ class HomeController extends Controller
     public function home()
     {
 
-        // $categories= Category::all();
 
-        $allProducts=Product::latest()->take(9)->get();
+
+        $allProducts=Product::latest()->take(12)->get();
       return view('frontend.pages.home',compact('allProducts'));
-      // ,compact('categories'));
+
     }
 
     public function about()
@@ -44,7 +44,7 @@ class HomeController extends Controller
 
     public function store(Request $request)
     {
-        // dd($request->all());
+
 
         $request->validate([
             'name'=>'required',

@@ -46,17 +46,14 @@
                          </div>
                     </div>
                         <br> </br>
-                                                                
+
             <div class="row">
                   <div class="col-sm-6">
                       <p class="m-b-10  f-w-600">Phone: {{auth('customer')->user()->phone}}</p>
                      <p class="m-b-10  f-w-600">Address: {{auth('customer')->user()->address}}</p>
                        <!-- <h6 class="text-muted f-w-400">Nursery System</h6> -->
                       </div>
-                     <!-- <div class="col-sm-6">
-                       <p class="m-b-10 f-w-600">Most Viewed</p>
-                      <h6 class="text-muted f-w-400">Dinoter husainm</h6>
-                      </div> -->
+
                       </div>
                      <ul class="social-link list-unstyled m-t-40 m-b-10">
                     <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="facebook" data-abc="true"><i class="mdi mdi-facebook feather icon-facebook facebook" aria-hidden="true"></i></a></li>
@@ -77,7 +74,7 @@
               </div>
              </div>
 
-                                            
+
          </div>
 
     </div>

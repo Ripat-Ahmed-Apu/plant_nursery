@@ -6,8 +6,7 @@
 
                     <div class="d-flex align-items-center ms-4 mb-4">
                             <div class="position-relative">
-                                 <!-- <img class="rounded-circle" src="img/ShobujBrikkho.png" alt="" style="width: 60px; height: 60px;"> -->
-                                 <!-- <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div> -->
+
                             </div>
                             <div class="ms-3">
                              <h6 class="mb-0"> Admin</h6>
@@ -30,10 +29,7 @@
                 Product
             </a>
 
-            {{-- <a class="nav-link" href="">
-                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                Slider
-            </a> --}}
+
 
             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseUser" aria-expanded="false" aria-controls="collapseUser">
                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
@@ -57,11 +53,7 @@
                 </nav>
             </div>
 
-            {{-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePayment" aria-expanded="false" aria-controls="collapsePayment">
-                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                 Payment
-                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-            </a> --}}
+
 
             <div class="collapse" id="collapsePayment" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav class="sb-sidenav-menu-nested nav">

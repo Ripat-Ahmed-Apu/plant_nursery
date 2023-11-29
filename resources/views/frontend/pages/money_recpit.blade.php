@@ -12,11 +12,12 @@
                     <address>
                         <strong>Plant Nursery</strong>
                         <br>
-                        <strong>Customer Name:</strong> {{auth('customer')->user()->name}}
+                        <strong>Customer Name:</strong> {{auth('customer')?->user()?->name}}
                         <br>
-                        <strong>Customer Email:</strong> {{auth('customer')->user()->email}}
+                        <strong>Customer Email:</strong> {{auth('customer')?->user()?->email}}
                         <br>
-                        <abbr title="Phone">Phone:</abbr> {{auth('customer')?->user()?->phone}}
+                        <strong>Phone:</strong> {{auth('customer')?->user()?->phone}}
+
                     </address>
                 </div>
 
@@ -46,6 +47,9 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @php
+                            $total = 0;
+                        @endphp
                         @foreach ($order_items as $key=>$item )
                                      {{-- @dd($item->product->name) --}}
                                      <tr>
@@ -53,18 +57,24 @@
                                         <td class="col-md-1" style="text-align: center"> {{$item->qty}} </td>
                                         <td class="col-md-1 text-center">{{$item->price}}TK</td>
                                         <td class="col-md-1 text-center">{{$item->subtotal}}TK</td>
+                                        @php
+                                            $total+=($item->price*$item->qty)
+                                            @endphp
                                     </tr>
+
                         @endforeach
 
 
 
 
-                        {{-- <tr>
+                        <tr>
                             <td>   </td>
                             <td>   </td>
-                            <td class="text-right"><h4><strong>Total: </strong></h4></td>
-                            <td class="text-center text-danger"><h4><strong>$31.53</strong></h4></td>
-                        </tr> --}}
+                            <td class="text-right"><h4><strong>Total:{{$total}}BDT</strong></h4></td>
+                            <td class="text-center text-danger"><h4><strong>
+
+                            </strong></h4></td>
+                        </tr>
                     </tbody>
                 </table>
                 <button type="button" class="btn btn-success btn-lg btn-block">

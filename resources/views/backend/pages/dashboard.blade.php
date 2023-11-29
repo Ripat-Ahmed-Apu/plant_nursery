@@ -20,7 +20,7 @@
             <div class="card-body">Category</div>
             <div class="card-footer d-flex align-items-center justify-content-between">
                 <a>{{$categories}}</a>
-                <!-- <div class="small text-white"><i class="fas fa-angle-right"></i></div> -->
+
             </div>
         </div>
     </div>
@@ -55,13 +55,13 @@
             <div class="card-body">Order</div>
             <div class="card-footer d-flex align-items-center justify-content-between">
                 <a>{{$orders}}</a>
-                <!-- <div class="small text-white"><i class="fas fa-angle-right"></i></div> -->
+
             </div>
         </div>
     </div>
     <div class="col-xl-3 col-md-6">
         <div class="card bg-success text-white mb-4">
-            <div class="card-body">Delivery Man/Employee</div>
+            <div class="card-body">Delivery Man</div>
             <div class="card-footer d-flex align-items-center justify-content-between">
                 <a>{{$employees}}</a>
 

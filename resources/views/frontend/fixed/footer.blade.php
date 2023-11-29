@@ -21,7 +21,7 @@
 
                     <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="93fef2faffd3eafce6e1f7fcfef2fafdbdf0fcfe">RipatApu@gmail.com</a></p>
 
-                    <!-- <img src="images/payment.png" alt="we accept"> -->
+
 
                 </div>
 
@@ -49,7 +49,7 @@
 
                         <li><a>Delivery Information</a></li>
 
-                        <!-- <li><a href="">Manufacturers</a></li> -->
+
 
                     </ul>
 
@@ -74,11 +74,7 @@
 
                         <p>Email: <a>RipatApu@gmail.com</a></p>
                         <li><a>Customer Support </a></li>
-                        <!-- <li><a href="">Sitemap</a></li>
 
-                        <li><a href="">Gift Vouchers</a></li>
-
-                        <li><a href="">Live Chat 24x7</a></li> -->
 
                     </ul>
 
@@ -117,18 +113,3 @@
 </div>
 
 </div>
-
-<!-- <div class="copyright text-center">
-
-<div class="container">
-
-    <div class="row"> -->
-
-        <!-- <p class="copyright"> Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
-        </p> -->
-
-    <!-- </div>
-
-</div> -->
-
-<!-- </div> -->

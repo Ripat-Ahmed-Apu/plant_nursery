@@ -2,7 +2,8 @@
 
 @section('content')
 
-<h1>Product Report</h1>
+
+<h2>Product Report</h2>
 
 @if(session()->has('msg'))
 <p class="alert alert-success"> {{session()->get('msg')}}</p>
@@ -11,7 +12,7 @@
 @if ($errors->any())
   @foreach($errors->all() as $error)
     <div>
-    <p> <strong style="color: red;" class="alert-danger"> {{$error}}  </strong> </p> 
+    <p> <strong style="color: red;" class="alert-danger"> {{$error}}  </strong> </p>
   </div>
   @endforeach
   @endif
@@ -34,10 +35,18 @@
 </div>
 
 </form>
-<br></br>
+<br> </br>
+
 <div id="productReport">
 
 <h1 style="color: black;">Report of: {{request()->from_date}} to  {{request()->to_date}}</h1>
+
+
+<h5 style="text-align: center">  Plant Paradise</h5>
+<p class="mb-0" style="text-align: center">  Email: RipatApu@gmail.com</p>
+<p  style="text-align: center">  Phone: 01758690300</p>
+
+<br> </br>
     <table class="table table-striped">
         <thead>
         <tr>

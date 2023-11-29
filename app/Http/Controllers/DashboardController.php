@@ -21,9 +21,9 @@ class DashboardController extends Controller
         $contacts= Contact::all()->count();
 
         $total_order=Order::get();
-        
+
         return view ('backend.pages.dashboard',compact('categories','products','users','orders','employees','contacts','total_order'));
-    
-       
+
+
     }
 }

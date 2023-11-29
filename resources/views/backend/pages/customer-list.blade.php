@@ -19,9 +19,7 @@
       <th scope="col">Name</th>
       <th scope="col">Email</th>
       <th scope="col">Status</th>
-      {{-- <th scope="col">Phone</th>
-      <th scope="col">Address</th> --}}
-      <!-- <th scope="col">Actions</th> -->
+
     </tr>
   </thead>
   <tbody>
@@ -31,13 +29,7 @@
       <td> {{$user->name}}</td>
       <td> {{$user->email}}</td>
       <td> {{$user->status}}</td>
-      {{-- <td> {{$user->phone}}</td>
-      <td> {{$user->address}}</td> --}}
-      <!-- <td>
-        <a class="btn btn-primary"  href="">View</a>
-        <a class="btn btn-warning"  href="">Edit</a>
-        <a  class="btn btn-danger" href="">Delete</a>
-      </td> -->
+
     </tr>
 
 @endforeach

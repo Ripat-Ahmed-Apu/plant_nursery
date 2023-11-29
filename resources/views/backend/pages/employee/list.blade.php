@@ -6,7 +6,7 @@
 <div class="container-fluid px-4">
 
 <h1 class="mt-2"> Delivery Man Details</h1>
-<ol class="breadcrumb mb-1">      
+<ol class="breadcrumb mb-1">
 </ol>
 @if(session()->has('msg'))
 <p class="alert alert-success"> {{session()->get('msg')}}</p>
@@ -14,7 +14,7 @@
 
 <a href="{{route('employee.add.form')}}" class="btn btn-success">Add New Delivery Man</a>
 
-<ol class="breadcrumb mb-2">      
+<ol class="breadcrumb mb-2">
 </ol>
 
 <table class="table">
@@ -49,7 +49,7 @@
         <a  class="btn btn-danger" href="{{route('employee.delete',$employee->id)}}">Delete</a>
       </td>
     </tr>
- 
+
 @endforeach
   </tbody>
 </table>

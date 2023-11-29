@@ -3,23 +3,7 @@
 
 <div class="breadcumbs">
 
-        <!-- <div class="container">
 
-            <div class="row">
-
-                <span>Home > </span>
-
-                <span>Men > </span>
-
-                <span>Eyewear > </span>
-
-                <span>Blue Jacket</span>
-
-            </div>
-
-        </div>
-
-    </div>   -->
 
     <div class="short-description">
 
@@ -65,21 +49,7 @@
 
                     <h1 class="product-title">{{$singleShow->name}}</h1>
 
-                    <!-- <div class="ratings">
 
-                        <i class="fa fa-star"></i>
-
-                        <i class="fa fa-star"></i>
-
-                        <i class="fa fa-star"></i>
-
-                        <i class="fa fa-star"></i>
-
-                        <i class="fa fa-star"></i>
-
-                        <span class="vote-count">35 vote</span>
-
-                    </div> -->
                     <br> </br>
 
                     <div class="product-info">
@@ -104,11 +74,11 @@
                      @csrf
                        <div class="qt-area" >
 
-                           <!-- <i class="fa fa-minus"></i> -->
+
 
                            <input type="number" name="quantity" class="qt" value="1" min="1">
 
-                           <!-- <i class="fa fa-plus"></i> -->
+
 
                        </div>
                        @if($singleShow->quantity>0)
@@ -154,11 +124,7 @@
 
                         </div>
 
-                    <!-- </div>
 
-                    <div class="tab-pane" id="reviews">
-
-                    </div> -->
 
                 </div>
 

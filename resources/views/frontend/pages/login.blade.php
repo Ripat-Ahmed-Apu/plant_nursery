@@ -70,15 +70,12 @@
         <div class="form-group">
             <input name="password" type="password" class="form-control" placeholder="Password" required="required">
         </div>
-        {{-- <div class="clearfix">
-            <label class="float-left form-check-label" ><input type="checkbox" required="required" > Remember me</label>
 
-        </div>   --}}
 
         <div class="form-group">
             <button type="submit" class="btn btn-success btn-lg btn-block">Log in</button>
         </div>
-            <!-- <a href="#" class="float-right">Forgot Password?</a>  -->
+
     </form>
 
 </div>

@@ -6,15 +6,15 @@
 <div class="container-fluid px-4">
 
 <h1 class="mt-2"> All Product </h1>
-<ol class="breadcrumb mb-1">      
+<ol class="breadcrumb mb-1">
 </ol>
 @if(session()->has('msg'))
 <p class="alert alert-success"> {{session()->get('msg')}}</p>
 @endif
 
-<a href="{{route('product.create.form')}}" class="btn btn-success">Create New Product</a>
+<a  href="{{route('product.create.form')}}" class="btn btn-success">Create New Product</a>
 
-<ol class="breadcrumb mb-2">      
+<ol class="breadcrumb mb-2">
 </ol>
 
 <table class="table">
@@ -32,18 +32,18 @@
   </thead>
   <tbody>
 
-    
-  @foreach($productsCollection as $product)
+
+  @foreach($productsCollection as $key=> $product)
     <tr>
-      <th scope="row">{{$product->id}}</th>
+      <th scope="row">{{$productsCollection->firstitem()+$key}}</th>
       <td>{{$product->name}}</td>
       <td>{{$product->category_data->name}}</td>
       <td>
-        <img style="width: 45px;" src="{{url('/uploads/products/'.$product->image)}}" alt="">
+        <img style="width:60px; height:80px" src="{{url('/uploads/products/'.$product->image)}}" alt="">
       </td>
       <td>{{$product->price}}</td>
       <td>{{$product->quantity}}</td>
-      <td>{{$product->status}}</td>
+      <td class="text-capitalize">{{$product->status}}</td>
       <td>
         <a class="btn btn-primary"  href="{{route('product.view',$product->id)}}">View</a>
         <a class="btn btn-warning"  href="{{route('product.edit',$product->id)}}">Edit</a>
