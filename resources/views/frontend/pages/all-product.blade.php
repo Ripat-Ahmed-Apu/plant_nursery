@@ -35,6 +35,7 @@
 
                             <p   class="title text-capitalize">{{$product->name}}</p>
 
+
                             <p class="price">{{$product->price}} BDT</p>
 
 
