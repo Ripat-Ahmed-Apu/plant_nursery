@@ -122,9 +122,9 @@ body {
         </div>
 
 		<div class="form-group">
-            <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+            <button style="background-color: green" type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
         </div>
-        <div class="text-center">Already have an account? Go to  <a href="{{route('customer.login')}}">Login</a></div>
+        <div class="text-center">Already have an account? Go to  <a  href="{{route('customer.login')}}">Login</a></div>
 
         </div>
     </form>

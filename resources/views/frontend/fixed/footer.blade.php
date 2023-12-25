@@ -1,4 +1,4 @@
-<div class="footer">
+<div style="background-color: green" class="footer">
 
 <div class="container">
 

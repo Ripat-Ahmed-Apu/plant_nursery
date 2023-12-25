@@ -15,9 +15,9 @@
 
     <div class="row">
 
-        <ul class="nav nav-tabs nav-product-tabs">
-          <li><a data-toggle="tab" style="text-align: center;">Search Products for: {{$searchKey}}. found ({{$products->count()}})</a></li>
-         <li class="pull-right collection-url"><a>All <i></i></a></li>
+        <ul style="background-color: green" class="nav nav-tabs nav-product-tabs">
+          <li><a style="background-color: green" data-toggle="tab" style="text-align: center;">Search Products for: {{$searchKey}}. found ({{$products->count()}})</a></li>
+         <li style="background-color: green" class="pull-right collection-url"><a>All <i></i></a></li>
         </ul>
 
 <div class="tab-pane active" id="trending">
@@ -27,7 +27,7 @@
 @foreach($products as $product)
     <div class="col-md-4 col-sm-2">
 
-        <div class="single-product">
+        <div style="border-color: green" class="single-product">
 
             <div class="product-block">
 
@@ -35,9 +35,9 @@
 
                 <div class="product-description text-center">
 
-                    <p class="title">{{$product->name}}</p>
+                    <p style="background-color: green" class="title">{{$product->name}}</p>
 
-                    <p class="price">{{$product->price}} BDT</p>
+                    <p style="background-color: green" class="price">{{$product->price}} BDT</p>
 
                 </div>
 
@@ -45,7 +45,7 @@
 
                     <ul>
 
-                    <li><a href="{{route('website.product-details',$product->id)}}"><i class="fa fa-arrows-h"></i></a></li>
+                    <li><a style="background-color: green" href="{{route('website.product-details',$product->id)}}"><i class="fa fa-arrows-h"></i></a></li>
 
                         <!-- <li><a href=""><i class="fa fa-heart-o"></i></a></li> -->
 

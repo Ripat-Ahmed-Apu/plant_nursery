@@ -13,8 +13,8 @@
 
         <div class="row">
 
-            <ul class="nav nav-tabs nav-product-tabs">
-            <li><a data-toggle="tab" style="text-align: center;">My orders</a></li>
+            <ul style="background-color: green" class="nav nav-tabs nav-product-tabs">
+            <li><a style="background-color: green" data-toggle="tab" style="text-align: center;">My orders</a></li>
             <li class="pull-right collection-url"><a>All <i></i></a></li>
             </ul>
 <br> </br>
@@ -46,7 +46,7 @@
 
           <td>
                 <a href="{{route('my.order.view',$item->id)}}" class="btn btn-primary">View</a>
-                <a href="{{route('customer.invoice',$item->id)}}" class="btn btn-success">Invoice</a>
+                <a style="background-color: green" href="{{route('customer.invoice',$item->id)}}" class="btn btn-success">Invoice</a>
                 <a href="{{route('my.order.delete',$item->id)}}" class="btn btn-danger">Cancel</a>
           </td>
         </tr>

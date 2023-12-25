@@ -19,15 +19,15 @@
 
                             <ul class="thumb-image">
 
-                                <li class="active"><a href="images/single-product-1.jpg"><img src="{{url('/uploads/products/'.$singleShow->image)}}" alt=""></a></li>
+                                <li class="active"><a href="images/single-product-1.jpg"><img style="border-color: green"  src="{{url('/uploads/products/'.$singleShow->image)}}" alt=""></a></li>
 
-                                <li><a href="images/single-product-2.jpg"><img src="{{url('/uploads/products/'.$singleShow->image)}}" alt=""></a></li>
+                                <li><a  href="images/single-product-2.jpg"><img style="border-color: green"  src="{{url('/uploads/products/'.$singleShow->image)}}" alt=""></a></li>
 
-                                <li><a href="images/single-product-3.jpg"><img src="{{url('/uploads/products/'.$singleShow->image)}}" alt=""></a></li>
+                                <li><a href="images/single-product-3.jpg"><img style="border-color: green"  src="{{url('/uploads/products/'.$singleShow->image)}}" alt=""></a></li>
 
-                                <li><a href="images/single-product-4.jpg"><img src="{{url('/uploads/products/'.$singleShow->image)}}" alt=""></a></li>
+                                <li><a href="images/single-product-4.jpg"><img style="border-color: green"  src="{{url('/uploads/products/'.$singleShow->image)}}" alt=""></a></li>
 
-                                <li><a href="images/single-product-5.jpg"><img src="{{url('/uploads/products/'.$singleShow->image)}}" alt=""></a></li>
+                                <li><a href="images/single-product-5.jpg"><img style="border-color: green"  src="{{url('/uploads/products/'.$singleShow->image)}}" alt=""></a></li>
 
                             </ul>
 
@@ -84,7 +84,7 @@
                        @if($singleShow->quantity>0)
 
                        <!-- <a class="btn btn-theme" href="{{route('add.to.cart',$singleShow->id)}}" role="button">Add to cart</a> -->
-                       <button type="submit" class="btn btn-theme">Add to cart</button>
+                       <button style="background-color: green" type="submit" class="btn btn-theme">Add to cart</button>
                      @endif
                     </form>
 
@@ -104,17 +104,17 @@
 
             <div class="single-product-tabs">
 
-                <ul class="nav nav-tabs nav-single-product-tabs">
+                <ul style="background-color: green" class="nav nav-tabs nav-single-product-tabs">
 
-                    <li class="active"><a href="#description" data-toggle="tab">Description</a></li>
+                    <li class="active"><a style="background-color: green" href="#description" data-toggle="tab">Description</a></li>
 
                     <!-- <li><a href="#reviews" data-toggle="tab">Reviews</a></li> -->
 
                 </ul>
 
-                <div class="tab-content">
+                <div  class="tab-content">
 
-                    <div class="tab-pane active" id="description">
+                    <div  class="tab-pane active" id="description">
 
                         <div class="product-desc">
 

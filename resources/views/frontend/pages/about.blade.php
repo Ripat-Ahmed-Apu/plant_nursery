@@ -8,9 +8,9 @@
 
     <div class="row">
 
-        <ul class="nav nav-tabs nav-product-tabs">
+        <ul style="background-color: green" class="nav nav-tabs nav-product-tabs">
 
-            <li><a data-toggle="tab" style="text-align: center;">About Us</a></li>
+            <li><a style="background-color: green" data-toggle="tab" style="text-align: center;">About Us</a></li>
 
         </ul>
 

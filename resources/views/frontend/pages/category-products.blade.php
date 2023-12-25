@@ -14,10 +14,10 @@
 
     <div class="row">
 
-        <ul class="nav nav-tabs nav-product-tabs">
+        <ul style="background-color: green" class="nav nav-tabs nav-product-tabs">
 
-            <li><a data-toggle="tab" style="text-align: center;">Products under {{$category->name}}</a></li>
-            <li class="pull-right collection-url"><a>All <i></i></a></li>
+            <li><a style="background-color: green" data-toggle="tab" style="text-align: center;">Products under {{$category->name}}</a></li>
+            <li style="background-color: green" class="pull-right collection-url"><a>All <i></i></a></li>
         </ul>
         <div class="tab-content">
         <div class="tab-pane active" id="trending">
@@ -25,7 +25,7 @@
             @foreach($category->products as $product)
             <div class="col-md-4 col-sm-2">
 
-<div class="single-product">
+<div style="border-color: green" class="single-product">
 
     <div class="product-block">
 
@@ -33,9 +33,9 @@
 
         <div class="product-description text-center">
 
-        <p class="title">{{$product->name}}</p>
+        <p style="background-color: green" class="title">{{$product->name}}</p>
 
-        <p class="price">{{$product->price}} BDT</p>
+        <p style="background-color: green" class="price">{{$product->price}} BDT</p>
 
 
         </div>

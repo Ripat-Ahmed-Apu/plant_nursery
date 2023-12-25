@@ -37,11 +37,11 @@
         <div class="card-body">
             <div class="table-responsive">
               <table class="table table-bordered m-0">
-              <a href="{{route('cart.clear')}}" class="btn btn-primary">Clear Cart</a>
+              <a style="background-color: green" href="{{route('cart.clear')}}" class="btn btn-primary">Clear Cart</a>
                 <thead>
                   <tr>
                     <!-- Set columns width -->
-                    <th class="text-center py-3 px-4" style="min-width: 400px;">Product Name &amp; Details</th>
+                    <th  class="text-center py-3 px-4" style="min-width: 400px">Product Name &amp; Details</th>
                     <th class="text-right py-3 px-4" style="width: 100px;">Price</th>
                     <th class="text-center py-3 px-4" style="width: 120px;">Quantity</th>
                     <th class="text-right py-3 px-4" style="width: 100px;">Total</th>
@@ -60,7 +60,7 @@
                       <div class="media align-items-center">
                         <img src="{{url('uploads/products/'.$cart['image'])}}" class="d-block ui-w-40 ui-bordered mr-4" alt="">
                         <div class="media-body">
-                          <a href="#" class="d-block text-dark">{{$cart['name']}}</a>
+                          <a  style="text-color: green" href="#" class="d-block text-dark">{{$cart['name']}}</a>
 
                         </div>
                       </div>
@@ -92,7 +92,7 @@
             @if(session()->has('cart') && count(session()->get('cart'))>0)
             <div class="float-right">
               {{-- <button type="button" class="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Back to shopping</button> --}}
-              <a href="{{route('checkout')}}" class="btn btn-success">Checkout</a>
+              <a  style="background-color: green" href="{{route('checkout')}}" class="btn btn-success">Checkout</a>
             </div>
             @endif
           </div>

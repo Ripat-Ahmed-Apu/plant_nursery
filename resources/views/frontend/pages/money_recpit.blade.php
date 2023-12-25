@@ -26,7 +26,7 @@
                         <em>Date: {{ date('d-m-Y') }}</em>
                     </p>
                     <p>
-                        <button onclick="printDiv('productReport')" class="btn btn-success">Print</button>
+                        <button style="background-color: green" onclick="printDiv('productReport')" class="btn btn-success">Print</button>
 
                     </p>
                 </div>
@@ -77,7 +77,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <button type="button" class="btn btn-success btn-lg btn-block">
+                <button style="background-color: green" type="button" class="btn btn-success btn-lg btn-block">
                     Thank You
                 </button></td>
             </div>

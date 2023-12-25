@@ -8,9 +8,9 @@
 
     <div class="row">
 
-        <ul class="nav nav-tabs nav-product-tabs">
+        <ul style="background-color: green" class="nav nav-tabs nav-product-tabs">
 
-            <li><a data-toggle="tab" style="text-align: center;">Conatct Us</a></li>
+            <li><a style="background-color: green" data-toggle="tab" style="text-align: center;">Conatct Us</a></li>
 
         </ul>
 
@@ -55,7 +55,7 @@
             <label for="message">Message</label>
             <textarea name="message" class="form-control" id="message" rows="5" placeholder="Your Message"> </textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button style="background-color: green" type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </div>

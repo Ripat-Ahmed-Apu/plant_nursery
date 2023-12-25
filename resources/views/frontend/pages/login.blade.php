@@ -73,7 +73,7 @@
 
 
         <div class="form-group">
-            <button type="submit" class="btn btn-success btn-lg btn-block">Log in</button>
+            <button style="background-color: green" type="submit" class="btn btn-success btn-lg btn-block">Log in</button>
         </div>
 
     </form>

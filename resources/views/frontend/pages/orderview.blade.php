@@ -13,9 +13,9 @@
 
         <div class="row">
 
-            <ul class="nav nav-tabs nav-product-tabs">
-            <li><a data-toggle="tab" style="text-align: center;">Order Details</a></li>
-            <li class="pull-right collection-url"><a>All <i></i></a></li>
+            <ul style="background-color: green"  class="nav nav-tabs nav-product-tabs">
+            <li><a style="background-color: green" data-toggle="tab" style="text-align: center;">Order Details</a></li>
+            <li  style="background-color: green" class="pull-right collection-url"><a>All <i></i></a></li>
             </ul>
             {{-- <a href="{{route('invoice',)}}" class="btn btn-success">Invoice</a> --}}
 <br><br>

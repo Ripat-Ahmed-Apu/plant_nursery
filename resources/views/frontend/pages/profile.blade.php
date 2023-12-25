@@ -7,9 +7,9 @@
 
     <div class="row">
 
-        <ul class="nav nav-tabs nav-product-tabs">
+        <ul style="background-color: green" class="nav nav-tabs nav-product-tabs">
 
-            <li><a data-toggle="tab" style="text-align: center;">My Profile</a></li>
+            <li><a style="background-color: green" data-toggle="tab" style="text-align: center;">My Profile</a></li>
 
         </ul>
 
@@ -62,7 +62,7 @@
                 </ul>
 
                       <br> </br>
-                      <a href="{{route('customer.edit')}}" class="btn btn-primary btn-rounded btn-lg">
+                      <a style="background-color: green" href="{{route('customer.edit')}}" class="btn btn-primary btn-rounded btn-lg">
                         Edit Profile
                       </a>
                     </div>
