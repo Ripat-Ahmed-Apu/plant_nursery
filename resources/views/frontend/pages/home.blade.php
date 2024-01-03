@@ -19,7 +19,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <img src="{{url('img/image-2.jpg')}}" style="width: 1280px; height: 530px" alt="">
+            <img src="{{url('img/slider-1.jpg')}}" style="width: 1280px; height: 410px" alt="">
             <div class="carousel-caption">
               <br><br> <br><br> <br><br><br><br><br><br><br><br><br><br>
               {{-- <h3 style="text-align: start;">Los Angeles</h3>
@@ -28,7 +28,7 @@
           </div>
 
           <div class="item">
-          <img src="{{url('img/image-4.png')}}" style="width: 1280px; height: 530px" alt="">
+          <img src="{{url('img/slider-2.jpg')}}" style="width: 1280px; height: 410px" alt="">
             <div class="carousel-caption">
             <br><br> <br><br> <br><br><br><br><br><br><br><br><br><br>
             {{-- <h3 style="text-align: start;">Los Angeles</h3>
@@ -37,7 +37,7 @@
           </div>
 
           <div class="item">
-          <img src="{{url('img/image-1.png')}}" style="width: 1280px; height: 530px" alt="">
+          <img src="{{url('img/slider-3.jpg')}}" style="width: 1280px; height: 410px" alt="">
             <div class="carousel-caption">
             <br><br> <br><br> <br><br><br><br><br><br><br><br><br><br>
             {{-- <h3 style="text-align: start;">Los Angeles</h3>
@@ -47,7 +47,7 @@
 
 
           <div class="item">
-          <img src="{{url('img/image-3.png')}}" style="width: 1280px; height: 530px" alt="">
+          <img src="{{url('img/slider-4.jpg')}}" style="width: 1280px; height: 410px" alt="">
             <div class="carousel-caption">
             <br><br> <br><br> <br><br><br><br><br><br><br><br><br><br>
             {{-- <h3 style="text-align: start;">Los Angeles</h3>
